@@ -1,12 +1,9 @@
 import VMoney from './directive'
 import options from './options'
-const VERSION = proccess.env.VERSION
 
 export {
-  Money,
   VMoney,
-  options,
-  VERSION
+  options
 }
 
 export default {

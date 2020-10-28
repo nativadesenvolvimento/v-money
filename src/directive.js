@@ -4,11 +4,11 @@ import defaults from './options'
 
 export default function (el, binding) {
   if (!binding.value) return
-  var opt = assign(defaults, binding.value)
+  const opt = assign(defaults, binding.value);
 
   // v-money used on a component that's not a input
   if (el.tagName.toLocaleUpperCase() !== 'INPUT') {
-    var els = el.getElementsByTagName('input')
+    const els = el.getElementsByTagName('input');
     if (els.length !== 1) {
       // throw new Error("v-money requires 1 input, found " + els.length)
     } else {
@@ -17,7 +17,7 @@ export default function (el, binding) {
   }
 
   el.oninput = function () {
-    var positionFromEnd = el.value.length - el.selectionEnd
+    let positionFromEnd = el.value.length - el.selectionEnd;
     el.value = format(el.value, opt)
     positionFromEnd = Math.max(positionFromEnd, opt.suffix.length) // right
     positionFromEnd = el.value.length - positionFromEnd

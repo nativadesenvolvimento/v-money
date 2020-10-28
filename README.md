@@ -1,4 +1,4 @@
-# v-money Mask for Vue.js
+# v-money Mask for Vue 3
 
 ![The Mask Money](https://cdn-images-1.medium.com/max/600/1*Rpc289FpghuHrnzyVpOUig.gif)
 
