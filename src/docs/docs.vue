@@ -101,7 +101,7 @@
 
 <script>
 import Vue from 'vue'
-import money from '../index'
+import money from '../../index'
 import vuetify from 'vuetify'
 
 Vue.use(money)

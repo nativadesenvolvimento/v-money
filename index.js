@@ -1,5 +1,5 @@
-import VMoney from './directive'
-import options from './options'
+import VMoney from './src/directive'
+import options from './src/options'
 
 export {
   VMoney,
